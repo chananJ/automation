@@ -7,16 +7,16 @@ current_year=date.today().year-1
 current_year=str(current_year)
 trueto=  '31.12.'+current_year
 
-create_location1='J:\\מחלקת השקעות\\היחידה הטכנולוגית\\חנן\\דרישת מידע בנקים שנתית\\' +(current_year)+ '\\בנק ...\\*.txt'
-create_location2='J:\\מחלקת השקעות\\היחידה הטכנולוגית\\חנן\\דרישת מידע בנקים שנתית\\' +(current_year)+ '\\בנק ...\\*.txt'
-create_location3='J:\\מחלקת השקעות\\היחידה הטכנולוגית\\חנן\\דרישת מידע בנקים שנתית\\' +(current_year)+ '\\בנק ...\\*.txt'
-create_location4='J:\\מחלקת השקעות\\היחידה הטכנולוגית\\חנן\\דרישת מידע בנקים שנתית\\' +(current_year)+ '\\בנק ...\\*.txt'
-create_location5='J:\\מחלקת השקעות\\היחידה הטכנולוגית\\חנן\\דרישת מידע בנקים שנתית\\' +(current_year)+ '\\בנק ... \\*.txt'
-create_location6='J:\\מחלקת השקעות\\היחידה הטכנולוגית\\חנן\\דרישת מידע בנקים שנתית\\' +(current_year)+ '\\הבנק ...\\*.txt'
-create_location7='J:\\מחלקת השקעות\\היחידה הטכנולוגית\\חנן\\דרישת מידע בנקים שנתית\\' +(current_year)+ '\\בנק ...\\*.txt'
-create_location8='J:\\מחלקת השקעות\\היחידה הטכנולוגית\\חנן\\דרישת מידע בנקים שנתית\\' +(current_year)+ '\\בנק ...\\*.txt'
-create_location9='J:\\מחלקת השקעות\\היחידה הטכנולוגית\\חנן\\דרישת מידע בנקים שנתית\\' +(current_year)+ '\\בנק.. \\*.txt'
-create_location10='J:\\מחלקת השקעות\\היחידה הטכנולוגית\\חנן\\דרישת מידע בנקים שנתית\\' +(current_year)+ '\\בנק ...\\*.txt'
+create_location1='J:\\מיקום\\' +(current_year)+ '\\בנק ...\\*.txt'
+create_location2='J:\\מיקום\\' +(current_year)+ '\\בנק ...\\*.txt'
+create_location3='J:\\מיקום\\' +(current_year)+ '\\בנק ...\\*.txt'
+create_location4='J:\\מיקום\\' +(current_year)+ '\\בנק ...\\*.txt'
+create_location5='J:\\מיקום\\' +(current_year)+ '\\בנק ... \\*.txt'
+create_location6='J:\\מיקום\\' +(current_year)+ '\\הבנק ...\\*.txt'
+create_location7='J:\\מיקום\\' +(current_year)+ '\\בנק ...\\*.txt'
+create_location8='J:\\מיקום\\' +(current_year)+ '\\בנק ...\\*.txt'
+create_location9='J:\\מיקום\\' +(current_year)+ '\\בנק.. \\*.txt'
+create_location10='J:\\מיקום\\' +(current_year)+ '\\בנק ...\\*.txt'
 folders1=[create_location1,create_location2,create_location3,create_location4,create_location5,create_location6,create_location7,create_location8,create_location9,create_location10,]
 for i in folders1:
     print(i)
