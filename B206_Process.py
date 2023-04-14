@@ -364,7 +364,7 @@ worksheet12.right_to_left()
 worksheet13.right_to_left()
 worksheet14.right_to_left()
 #--------------------------------------------------------------פותח גליונות ומגדיר מימין לשמאל------------------------------------
-header= "נספח א'- סעיף 3- תאגידים בנקאיים המוחזקים על ידי התאגיד הבנקאי (החזקה של למעלה מ10%) יש לצרף רשימה אקסלית נפרדת בהתאם לנספח א'"
+header= "כותרת'"
 merge_format = outworkbook.add_format({
     'bold': 1,
     'border': 1,
@@ -413,10 +413,10 @@ for i in range(len(n1_list)):
 tablelimit = counter
 tablelimit_new = 'A2:D' + str(tablelimit)
 worksheet1.add_table(tablelimit_new)
-worksheet1.write("A2","בנק",cell_format)
-worksheet1.write("B2","שם התאגיד הבנקאי המוחזק",cell_format)
-worksheet1.write("C2","שיעור ההחזקה במשירין ובעקיפין בתאגיד הבנקאי המוחזק (באחוזים)",cell_format)
-worksheet1.write("D2","הערות",cell_format)
+worksheet1.write("A2"," טקסט רצוי",cell_format)
+worksheet1.write("B2","טקסט רצוי",cell_format)
+worksheet1.write("C2","טקסט רצוי",cell_format)
+worksheet1.write("D2","טקסט רצוי",cell_format)
 
 #    --------------------------------------------------------------גליון 2--------------------------------
 counter=2
@@ -442,15 +442,15 @@ tablelimit = counter + 2
 tablelimit_new = 'A3:F' + str(tablelimit)
 worksheet2.add_table(tablelimit_new)
 
-header='נספח ב - סעיף 4 - חברות העוסקות בניהול תיקים/ ניהול קרנות נאמנות /ניהול קרנות סל/ חיתום/ ייעוץ השקעות/ ניהול קופות גמל, המוחזקות (החזקה של למעלה מ-10%)  על ידי הבנק או שמוחזקות על ידי בעלי השליטה בבנק'
+header='כותרת'
 worksheet2.merge_range('A1:F2',header,merge_format)
-worksheet2.write("A3","בנק",cell_format)
-worksheet2.write("B3","שם החברה",cell_format)
-worksheet2.write("C3","הקשר  לתאגיד הבנקאי (חברה מוחזקת/ חברה המוחזקת על ידי בעל השליטה של הבנק)",cell_format)
-worksheet2.write("D3","אופי הפעילות בחברה (ניהול קרנות נאמנות/ ניהול קרנות סל/ חיתום וכד)",cell_format)
-worksheet2.write("D3","אופי הפעילות בחברה (ניהול קרנות נאמנות/ ניהול קרנות סל/ חיתום וכד)",cell_format)
-worksheet2.write("E3","שיעור ההחזקה(באחוזים)",cell_format)
-worksheet2.write("F3","הערות",cell_format)
+worksheet2.write("A3","טקסט רצוי",cell_format)
+worksheet2.write("B3","טקסט רצוי",cell_format)
+worksheet2.write("C3","טקסט רצוי",cell_format)
+worksheet2.write("D3","טקסט רצוי)",cell_format)
+worksheet2.write("D3","טקסט רצוי)",cell_format)
+worksheet2.write("E3","טקסט רצוי)",cell_format)
+worksheet2.write("F3","טקסט רצוי",cell_format)
 
 #    --------------------------------------------------------------גליון 3--------------------------------
 counter=4
@@ -481,36 +481,36 @@ for i in range(len(n3_list)):
 tablelimit = counter + 2
 tablelimit_new = 'A4:L' + str(tablelimit)
 worksheet3.add_table(tablelimit_new)
-header='נספח ג - סעיפים 5-8- מידע על היועצים הפעילים ועל הפעילות המיועצת'
+header='טקסט רצוי'
 worksheet3.merge_range('A1:L2',header,merge_format)
 worksheet3.write("A4",'',cell_format)
 worksheet3.write("B4",'',cell_format)
 
-worksheet3.write("C3","סעיף 5 ",cell_format)
-worksheet3.write("D3","סעיף 5.1",cell_format)
-worksheet3.write("E3","סעיף 6.1",cell_format)
-worksheet3.write("F3","סעיף 7",cell_format)
-worksheet3.write("G3","סעיף 7.1",cell_format)
-worksheet3.write("H3","סעיף 7.2",cell_format)
-worksheet3.write("I3","סעיף 7.3",cell_format)
-worksheet3.write("J3","סעיף 7.4",cell_format)
-worksheet3.write("K3","סעיף 8.1",cell_format)
-worksheet3.write("L3","סעיף 8.2",cell_format)
-worksheet3.write("A4","בנק",cell_format)
-worksheet3.write("B4","סוג היועץ",cell_format)
-worksheet3.write("C4","מספר היועצים הפעילים (יועצים העוסקים באופן שוטף בייעוץ השקעות)",cell_format)
-worksheet3.write("D4","מתוכם - מספר יועצים פעילים המיועדים לעסוק רק בייעוץ השקעות",cell_format)
-worksheet3.write("E4","תקרת לקוחות משוייכים ליועץ (אם לא קיימת יש לסמן 0 [אפס])",cell_format)
-worksheet3.write("F4","מספר מקסימלי של לקוחות מיועצים המשוייכים בפועל ליועץ ספציפי",cell_format)
-worksheet3.write("G4","מספר יועצים אליהם לא משויכים לקוחות",cell_format)
-worksheet3.write("H4","מספר יועצים אליהם משוייכים 1-50 לקוחות",cell_format)
-worksheet3.write("I4","מספר יועצים אליהם משוייכים 51-200 לקוחות",cell_format)
-worksheet3.write("J4","מספר יועצים אליהם משוייכים מעל 200 לקוחות",cell_format)
-worksheet3.write("K4","אם היועץ נדרש עי הבנק ליצור קשר עם לקוח בתדירות הגבוהה מפעם בשנה - מה התדירות (ימים בשנה)",cell_format)
-worksheet3.write("L4","אם תדירות יצירת הקשר תלויה בסוג לקוח יש לפרט את התדיריות השונות בהתאם לסוגי הלקוחות",cell_format)
+worksheet3.write("C3","טקסט רצוי",cell_format)
+worksheet3.write("D3","טקסט רצוי",cell_format)
+worksheet3.write("E3","טקסט רצוי",cell_format)
+worksheet3.write("F3","טקסט רצוי",cell_format)
+worksheet3.write("G3","טקסט רצוי",cell_format)
+worksheet3.write("H3","טקסט רצוי",cell_format)
+worksheet3.write("I3","טקסט רצוי",cell_format)
+worksheet3.write("J3","טקסט רצוי",cell_format)
+worksheet3.write("K3","טקסט רצוי",cell_format)
+worksheet3.write("L3","טקסט רצוי",cell_format)
+worksheet3.write("A4","טקסט רצוי",cell_format)
+worksheet3.write("B4","טקסט רצוי",cell_format)
+worksheet3.write("C4","טקסט רצוי",cell_format)
+worksheet3.write("D4","טקסט רצוי",cell_format)
+worksheet3.write("E4","טקסט רצוי",cell_format)
+worksheet3.write("F4","טקסט רצוי",cell_format)
+worksheet3.write("G4","טקסט רצוי",cell_format)
+worksheet3.write("H4","טקסט רצוי",cell_format)
+worksheet3.write("I4","טקסט רצוי",cell_format)
+worksheet3.write("J4","טקסט רצוי",cell_format)
+worksheet3.write("K4","טקסט רצוי",cell_format)
+worksheet3.write("L4","טקסט רצוי",cell_format)
 
 #    --------------------------------------------------------------גליון 4------------------------------
-header='נספח ד - סעיף 9 - פירוט מספר החשבונות המיועצים ושוויהם'
+header='כותרת'
 colums=2
 counter=3
 tablelimit_new = 'A4:L18'
@@ -550,18 +550,18 @@ for z in range(len(table24)-1):
 tablelimit = counter
 tablelimit_new = 'A21:D' + str(tablelimit)
 worksheet4.add_table(tablelimit_new)
-header='מספר החשבונות המיועצים לפי כל סוג ייעוץ(מרכזי השקעות, סניפים, שירותים מקוונים וכו'
+header='כותרת'
 worksheet4.merge_range('A20:D20',header,merge_format)
-worksheet4.write("A21",'בנק',cell_format)
-worksheet4.write("B21",'סוג ייעוץ',cell_format)
-worksheet4.write("C21",'מספר',cell_format)
-worksheet4.write("D21",'הערות',cell_format)
+worksheet4.write("A21",'טקסט רצוי',cell_format)
+worksheet4.write("B21",'טקסט רצוי',cell_format)
+worksheet4.write("C21",'טקסט רצוי',cell_format)
+worksheet4.write("D21",'טקסט רצוי',cell_format)
 
 
 tablelimit = counter+2
 worksheet4.merge_range('A1:L3',header,merge_format)
 #    --------------------------------------------------------------גליון 5-----------------------------
-header='נספח ה - סעיף 10 - פירוט מספר היועצים הפעילים ומספר החשבונות המיועצים בכל סניף'
+header='כותרת'
 counter=3
 
 for i in range(len(n5_list)):
@@ -591,14 +591,14 @@ tablelimit_new = 'A3:F' + str(tablelimit)
 
 worksheet5.add_table(tablelimit_new)
 worksheet5.merge_range('A1:F2',header,merge_format)
-worksheet5.write("A3","בנק ",cell_format)
-worksheet5.write("B3","מספר סניף",cell_format)
-worksheet5.write("C3","שם הסניף",cell_format)
-worksheet5.write("D3","חטיבה",cell_format)
-worksheet5.write("E3","מספר היועצים הפעילים בסניף",cell_format)
-worksheet5.write("F3","מספר החשבונות המיועצים בסניף",cell_format)
+worksheet5.write("A3","טקסט רצוי ",cell_format)
+worksheet5.write("B3","טקסט רצוי",cell_format)
+worksheet5.write("C3","טקסט רצוי",cell_format)
+worksheet5.write("D3","טקסט רצוי",cell_format)
+worksheet5.write("E3","טקסט רצוי",cell_format)
+worksheet5.write("F3","טקסט רצוי",cell_format)
 #    --------------------------------------------------------------גליון 6-----------------------------
-header='נספח ו סעיפים 12, 12א- ממוצע סהכ שווי פעולות מצטבר בשח, ללא ניכוי עמלות, לחשבון מיועץ וממוצע מספר פעולות לחשבון מיועץ (בשני חישובי הממוצעים הפילוח הוא לפי סוגי המוצרים הפיננסיים שבטבלה שבנספח ה) בשנת '+current_year
+header='כותרת'+current_year
 
 
 
@@ -631,17 +631,17 @@ tablelimit_new = 'A4:F' + str(tablelimit)
 
 worksheet6.add_table(tablelimit_new)
 worksheet6.merge_range('A1:F2',header,merge_format)
-worksheet6.write("C3","סעיף 12 ",cell_format)
-worksheet6.write("D3","סעיף 12 א ",cell_format)
-worksheet6.write("A4","בנק ",cell_format)
-worksheet6.write("B4","סוג מוצר פיננסי",cell_format)
-worksheet6.write("C4","שווי נכסים נכון ל "+trueto)
-worksheet6.write("D4",'סהכ שווי פעולות מצטבר (קניות, מכירות ופדיונות) בשח בשנת '+ current_year+'- ממוצע לחשבון מיועץ פעיל בשנת '+current_year)
-worksheet6.write("E4","מספר פעולות (קניות , מכירות ופדיונות) ממוצע לחשבון מיועץ פעיל בשנת "+current_year)
-worksheet6.write("F4","מספר החשבונות שביצעו פעולה בסוג מוצר (המכנה בחישוב)",cell_format)
+worksheet6.write("C3","טקסט רצוי ",cell_format)
+worksheet6.write("D3","טקסט רצוי ",cell_format)
+worksheet6.write("A4","טקסט רצוי",cell_format)
+worksheet6.write("B4","טקסט רצוי",cell_format)
+worksheet6.write("C4","טקסט רצוי "+trueto)
+worksheet6.write("D4",'טקסט רצוי '+ current_year+'-טקסט רצוי'+current_year)
+worksheet6.write("E4","טקסט רצוי "+current_year)
+worksheet6.write("F4","טקסט רצוי",cell_format)
 
 #    --------------------------------------------------------------גליון 7-----------------------------
-header='נספח ז - סעיף 13 - שיעור ממוצע של עמלת קניה/ מכירה בחשבון מיועץ פעיל (פילוח לפי סוגי ניירות הערך שבנספח ו)'
+header='כותרת
 
 counter=3
 for i in range(len(n7_list)):
@@ -675,15 +675,15 @@ tablelimit_new = 'A3:F' + str(tablelimit)
 
 worksheet7.add_table(tablelimit_new)
 worksheet7.merge_range('A1:F1',header,merge_format)
-worksheet7.write("A3","בנק ",cell_format)
-worksheet7.write("B3","סוג נייר ערך ",cell_format)
-worksheet7.write("D3","שיעור ממוצע של עמלת קניה/ מכירה בחשבון מיועץ פעיל באחוזים או שווי ממוצע של עמלת קניה/ מכירה בחשבון מיועץ פעיל  בסכום קבוע ליחידה. ",cell_format)
-worksheet7.write("C3","מקום מסחר",cell_format)
-worksheet7.write("E3",'מספר החשבונות שביצעו פעולה בסוג מוצר (המכנה בחישוב)',cell_format)
-worksheet7.write("F3",'הערות' ,cell_format)
+worksheet7.write("A3","טקסט רצוי ",cell_format)
+worksheet7.write("B3","טקסט רצוי ",cell_format)
+worksheet7.write("D3","טקסט רצוי",cell_format)
+worksheet7.write("C3","טקסט רצוי",cell_format)
+worksheet7.write("E3",'טקסט רצוי',cell_format)
+worksheet7.write("F3",'טקסט רצוי' ,cell_format)
 
 #    --------------------------------------------------------------גליון 8-----------------------------
-header='נספח ח- סעיף 14- פילוח החשבונות המיועצים על פי מספר שיחות הייעוץ שנערכו בהם בשנת' +current_year
+header='כותרת' +current_year
 colums=1
 counter=2
 tablelimit_new = 'A3:K7'
@@ -703,18 +703,18 @@ for i in range(len(n8_list)):
 
 
         worksheet8.write(j, i + 1, n8_list[i][j], cell_format)
-    worksheet8.write(2, 0, 'חשבון מיועץ', cell_format)
-    worksheet8.write(3, 0, 'מספר חשבונות מיועצים להם נערכו פחות מ-4 שיחות ייעוץ בשנת '+current_year,cell_format)
-    worksheet8.write(4, 0,'מספר חשבונות מיועצים להם נערכו 4-12 שיחות ייעוץ בשנת '+current_year, cell_format)
-    worksheet8.write(5,0, 'מספר חשבונות מיועצים להם נערכו 13-20 שיחות ייעוץ בשנת ' +current_year, cell_format)
-    worksheet8.write(6,0, ' מספר חשבונות מיועצים להם נערכו מעל 20 שיחות ייעוץ בשנת ' +current_year,cell_format)
+    worksheet8.write(2, 0, 'טקסט רצוי', cell_format)
+    worksheet8.write(3, 0, 'טקסט רצוי '+current_year,cell_format)
+    worksheet8.write(4, 0,'טקסט רצוי '+current_year, cell_format)
+    worksheet8.write(5,0, 'טקסט רצוי ' +current_year, cell_format)
+    worksheet8.write(6,0, ' טקסט רצוי ' +current_year,cell_format)
     worksheet8.write(2, i+1, head, cell_format)
 
 tablelimit = counter+2
 worksheet8.merge_range('A1:K2',header,merge_format)
 
 #    --------------------------------------------------------------גליון 9-----------------------------
-header='נספח ט -סעיף 18 - בעלי התפקידים במטה הייעוץ'
+header='כותרת'
 
 counter=3
 for i in range(len(n9_list)):
@@ -739,15 +739,15 @@ tablelimit_new = 'A3:F' + str(tablelimit)
 
 worksheet9.add_table(tablelimit_new)
 worksheet9.merge_range('A1:F1',header,merge_format)
-worksheet9.write("A3","בנק ",cell_format)
-worksheet9.write("B3","שם ",cell_format)
-worksheet9.write("C3","תפקיד ",cell_format)
-worksheet9.write("D3","ותק בבנק בחודשים",cell_format)
-worksheet9.write("E3",'ותק בתפקיד (בחודשים)',cell_format)
-worksheet9.write("F3",'בעל רשיון ייעוץ' ,cell_format)
+worksheet9.write("A3","טקסט רצוי ",cell_format)
+worksheet9.write("B3","טקסט רצוי",cell_format)
+worksheet9.write("C3","טקסט רצוי",cell_format)
+worksheet9.write("D3","טקסט רצוי",cell_format)
+worksheet9.write("E3",'טקסט רצוי',cell_format)
+worksheet9.write("F3",'טקסט רצוי' ,cell_format)
 
 #---------------------------------------------------------גליון 10----------------------------------------------------------------
-header='נספח י - סעיף 19 - בעלי תפקידים מחוץ למטה הייעוץ העוסקים בבקרה ופיקוח על עבודת היועצים'
+header='כותרת'
 
 counter=2
 for i in range(len(n10_list)):
@@ -772,17 +772,17 @@ tablelimit_new = 'A2:G' + str(tablelimit)
 
 worksheet10.add_table(tablelimit_new)
 worksheet10.merge_range('A1:G1',header,merge_format)
-worksheet10.write("A2","בנק ",cell_format)
-worksheet10.write("B2","שם ",cell_format)
-worksheet10.write("D2","תפקיד ",cell_format)
-worksheet10.write("C2","יחידה ארגונית אליה משתייך",cell_format)
-worksheet10.write("E2",'ותק בבבנק (בחודשים)',cell_format)
-worksheet10.write("F2",'ותק בתפקיד (בחודשים)',cell_format)
-worksheet10.write("G2",'בעל רשיון ייעוץ (כן/לא)' ,cell_format)
+worksheet10.write("A2","טקסט רצוי ",cell_format)
+worksheet10.write("B2","טקסט רצוי",cell_format)
+worksheet10.write("D2","טקסט רצוי",cell_format)
+worksheet10.write("C2","טקסט רצוי",cell_format)
+worksheet10.write("E2",'טקסט רצוי',cell_format)
+worksheet10.write("F2",'טקסט רצוי',cell_format)
+worksheet10.write("G2",'טקסט רצוי' ,cell_format)
 
 
 #---------------------------------------------------------גליון 11----------------------------------------------------------------
-header='                                      נספח יא- סעיף 21- פירוט בענין כלי התמיכה שמספק הבנק ליועץ על מנת לסייע בידו בהמלצותיו ללקוח'
+header=' כותרת'
 
 counter=2
 for i in range(len(n11_list)):
@@ -807,18 +807,18 @@ tablelimit_new = 'A2:I' + str(tablelimit)
 
 worksheet11.add_table(tablelimit_new)
 worksheet11.merge_range('A1:I1',header,merge_format)
-worksheet11.write("A2","בנק ",cell_format)
-worksheet11.write("B2","קטגוריות ",cell_format)
-worksheet11.write("D2","האם מוצג ליועץ דירוג או ציון או שמדובר בהספקת מידע בלבד  ",cell_format)
-worksheet11.write("C2","שם הכלי התומך (אם אין לציין -אין)",cell_format)
-worksheet11.write("E2",'אם קיים מודל דירוג/ ציון יש לתאר בקצרה את מתודולוגית הדירוג/ ציון (הפרמטרים עליהם מבוסס המודל)',cell_format)
-worksheet11.write("F2",'תדירות עדכון (בימים)',cell_format)
-worksheet11.write("G2",'חובה להעזר בכלי התומך' ,cell_format)
-worksheet11.write("H2",'חובה לבחור מתוך המלצות הכלי התומך' ,cell_format)
-worksheet11.write("I2",'הערות' ,cell_format)
+worksheet11.write("A2","טקסט רצוי ",cell_format)
+worksheet11.write("B2","טקסט רצוי ",cell_format)
+worksheet11.write("D2","טקסט רצוי ",cell_format)
+worksheet11.write("C2","טקסט רצוי",cell_format)
+worksheet11.write("E2",'טקסט רצוי',cell_format)
+worksheet11.write("F2",'טקסט רצוי',cell_format)
+worksheet11.write("G2",'טקסט רצוי' ,cell_format)
+worksheet11.write("H2",'טקסט רצוי' ,cell_format)
+worksheet11.write("I2",'טקסט רצוי' ,cell_format)
 
 #---------------------------------------------------------גליון 12----------------------------------------------------------------
-header='נספח יב -סעיף 27 - הגורם הקובע את גובה המענקים שמקבל יועץ ההשקעות בבנקאם קיימים סוגים שונים של מענקים שהיקפם או זכאותו של היעוץ להם נקבעים על ידי גורמים שונים - יש לצרף רשימה אקסלית בהתאם לטבלה שבנספח יב'
+header='כותרת'
 counter=3
 for i in range(len(n12_list)):
     for j in range(len(n12_list[i])):
@@ -841,15 +841,15 @@ tablelimit_new = 'A3:C' + str(tablelimit)
 
 worksheet12.add_table(tablelimit_new)
 worksheet12.merge_range('A1:C2',header,merge_format)
-worksheet12.write("A3",'בנק' ,cell_format)
-worksheet12.write("B3",'סוג המענק' ,cell_format)
-worksheet12.write("C3",'הגורם האחראי' ,cell_format)
+worksheet12.write("A3",'טקסט רצוי' ,cell_format)
+worksheet12.write("B3",'טקסט רצוי' ,cell_format)
+worksheet12.write("C3",'טקסט רצוי' ,cell_format)
 
 
 
 
 #___________________________________________________________________________________________גליון 13____________________________
-header='נספח יג -סעיף 29 - הנושאים שבעניינם עברו יועצי ההשקעות בבנק הדרכות בשנת'+' ' +current_year
+header='כותרת'+' ' +current_year
 
 counter=3
 for i in range(len(n13_list)):
@@ -874,13 +874,13 @@ tablelimit_new = 'A3:C' + str(tablelimit)
 
 worksheet13.add_table(tablelimit_new)
 worksheet13.merge_range('A1:C2', header, merge_format)
-worksheet13.write("A3", 'בנק', cell_format)
-worksheet13.write("B3", 'נושא ההדרכה', cell_format)
-worksheet13.write("C3", 'מספר יועצי השקעות שהשתתפו בהדרכה', cell_format)
+worksheet13.write("A3", 'טקסט רצוי', cell_format)
+worksheet13.write("B3", 'טקסט רצוי', cell_format)
+worksheet13.write("C3", 'טקסט רצוי', cell_format)
 #    --------------------------------------------------------------גליון שאלון ראשי-----------------------------
-header='שאלון ראשי'+' '+current_year
+header='טקסט רצוי'+' '+current_year
 worksheet14.merge_range('A1:G1',header,merge_format)
-header='המידע הנדרש להלן מתייחס לתאריך'+' '+trueto+ ' אלא אם צוין מפורשות אחרת בגוף השאלה.'
+header='טקסט רצוי'+' '+trueto+ 'טקסט רצוי'
 worksheet14.merge_range('A2:G2',header,merge_format)
 
 count=3
@@ -911,13 +911,13 @@ for i in range(len(n14_list)):
 tablelimit = count
 tablelimit_new = 'A3:G' + str(tablelimit)
 worksheet14.add_table(tablelimit_new)
-worksheet14.write(2, 0, 'סעיף', cell_format)
-worksheet14.write(2, 1, 'נושא', cell_format)
-worksheet14.write(2, 2, 'נושא משנה', cell_format)
-worksheet14.write(2, 3, 'בנק', cell_format)
-worksheet14.write(2, 4, 'תשובה', cell_format)
-worksheet14.write(2, 5, 'האם חל שינוי מנתוני שנה שעברה? יש לרשום כן/לא', cell_format)
-worksheet14.write(2, 6, 'הערות', cell_format)
+worksheet14.write(2, 0, 'טקסט רצוי', cell_format)
+worksheet14.write(2, 1, 'טקסט רצוי', cell_format)
+worksheet14.write(2, 2, 'טקסט רצוי', cell_format)
+worksheet14.write(2, 3, 'טקסט רצוי', cell_format)
+worksheet14.write(2, 4, 'טקסט רצוי', cell_format)
+worksheet14.write(2, 5, 'טקסט רצוי', cell_format)
+worksheet14.write(2, 6, 'טקסט רצוי', cell_format)
 
 #מייצא קובץ לא לגעת:-------------------------------------
 worksheet1=openpyxl.load_workbook(name)
