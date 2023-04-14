@@ -9,14 +9,14 @@ trueto=  '31.12.'+current_year
 
 create_location1='J:\\מחלקת השקעות\\היחידה הטכנולוגית\\חנן\\דרישת מידע בנקים שנתית\\' +(current_year)+ '\\בנק ...\\*.txt'
 create_location2='J:\\מחלקת השקעות\\היחידה הטכנולוגית\\חנן\\דרישת מידע בנקים שנתית\\' +(current_year)+ '\\בנק ...\\*.txt'
-create_location3='J:\\מחלקת השקעות\\היחידה הטכנולוגית\\חנן\\דרישת מידע בנקים שנתית\\' +(current_year)+ '\\בנק ירושלים\\*.txt'
-create_location4='J:\\מחלקת השקעות\\היחידה הטכנולוגית\\חנן\\דרישת מידע בנקים שנתית\\' +(current_year)+ '\\בנק מזרחי\\*.txt'
-create_location5='J:\\מחלקת השקעות\\היחידה הטכנולוגית\\חנן\\דרישת מידע בנקים שנתית\\' +(current_year)+ '\\בנק דיסקונט\\*.txt'
-create_location6='J:\\מחלקת השקעות\\היחידה הטכנולוגית\\חנן\\דרישת מידע בנקים שנתית\\' +(current_year)+ '\\הבנק הבינלאומי\\*.txt'
-create_location7='J:\\מחלקת השקעות\\היחידה הטכנולוגית\\חנן\\דרישת מידע בנקים שנתית\\' +(current_year)+ '\\בנק לאומי\\*.txt'
-create_location8='J:\\מחלקת השקעות\\היחידה הטכנולוגית\\חנן\\דרישת מידע בנקים שנתית\\' +(current_year)+ '\\בנק מסד\\*.txt'
-create_location9='J:\\מחלקת השקעות\\היחידה הטכנולוגית\\חנן\\דרישת מידע בנקים שנתית\\' +(current_year)+ '\\בנק מרכנתיל דיסקונט\\*.txt'
-create_location10='J:\\מחלקת השקעות\\היחידה הטכנולוגית\\חנן\\דרישת מידע בנקים שנתית\\' +(current_year)+ '\\בנק הפועלים\\*.txt'
+create_location3='J:\\מחלקת השקעות\\היחידה הטכנולוגית\\חנן\\דרישת מידע בנקים שנתית\\' +(current_year)+ '\\בנק ...\\*.txt'
+create_location4='J:\\מחלקת השקעות\\היחידה הטכנולוגית\\חנן\\דרישת מידע בנקים שנתית\\' +(current_year)+ '\\בנק ...\\*.txt'
+create_location5='J:\\מחלקת השקעות\\היחידה הטכנולוגית\\חנן\\דרישת מידע בנקים שנתית\\' +(current_year)+ '\\בנק ... \\*.txt'
+create_location6='J:\\מחלקת השקעות\\היחידה הטכנולוגית\\חנן\\דרישת מידע בנקים שנתית\\' +(current_year)+ '\\הבנק ...\\*.txt'
+create_location7='J:\\מחלקת השקעות\\היחידה הטכנולוגית\\חנן\\דרישת מידע בנקים שנתית\\' +(current_year)+ '\\בנק ...\\*.txt'
+create_location8='J:\\מחלקת השקעות\\היחידה הטכנולוגית\\חנן\\דרישת מידע בנקים שנתית\\' +(current_year)+ '\\בנק ...\\*.txt'
+create_location9='J:\\מחלקת השקעות\\היחידה הטכנולוגית\\חנן\\דרישת מידע בנקים שנתית\\' +(current_year)+ '\\בנק.. \\*.txt'
+create_location10='J:\\מחלקת השקעות\\היחידה הטכנולוגית\\חנן\\דרישת מידע בנקים שנתית\\' +(current_year)+ '\\בנק ...\\*.txt'
 folders1=[create_location1,create_location2,create_location3,create_location4,create_location5,create_location6,create_location7,create_location8,create_location9,create_location10,]
 for i in folders1:
     print(i)
@@ -314,7 +314,7 @@ for bank in folders1:
 
             counter+=1
             line = line.split("\t")
-            if  bankname!='בנק ירושלים' and counter > 6 and line[0] in segments:
+            if  bankname!='בנק ...' and counter > 6 and line[0] in segments:
                     count2+=1
 
                     line.append(bankname)
@@ -330,11 +330,11 @@ for bank in folders1:
 #--------------------------------------------------------------------------------------------------------------------------------------------------
 
 #---------------------------------------------------------#פעולות של ייצוא לאקסל ועיצוב הקובץ---------------------------------------------------
-name= 'איחוד נתוני הבנקים'+current_year+'.xlsx'
-name= 'J:\\מחלקת השקעות\\היחידה הטכנולוגית\\שרת מחלקת השקעות\\קוד בנקים\\' + name
+name= 'שם קובץ'+current_year+'.xlsx'
+name= 'J:\\מיקום\\' + name
 outworkbook=xlsxwriter.Workbook(name)
 #--------------------------------------------------------------פותח גליונות ומגדיר מימין לשמאל------------------------------------
-worksheet14=outworkbook.add_worksheet(' שאלון ראשי')
+worksheet14=outworkbook.add_worksheet('')
 worksheet1=outworkbook.add_worksheet(' נספח א')
 worksheet2=outworkbook.add_worksheet(' נספח ב')
 worksheet3=outworkbook.add_worksheet(' נספח ג')
